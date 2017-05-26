@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="getonApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar SMS getOn</title>
+    <!--Librerias-->
+    <script src="node_modules/angular/angular.js"></script>
+    <!--Aplicacion-->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/getonController.js"></script>
+</head>
+<body>
+    <div ng-controller="getonController">
+        <h1>Enviar SMS</h1>
+        <p>
+            <label for="mensaje">Mensaje</label>
+            <input id="mensaje" type="text" ng-model="geton.mensaje">
+        </p>
+        <p>
+            <label for="destinatario">Destinatario</label>
+            <input id="destinatario" type="text" ng-model="geton.destinatario">
+        </p>
+        <p>
+            <label for="token">token</label>
+            <input id="token" type="text" ng-model="geton.token">
+        </p>
+        <p>
+            <label for="campaña">ID de campaña</label>
+            <input id="campaña" type="text" ng-model="<geton class="campan"></geton>a">
+        </p>
+    </div>
+</body>
+</html>
