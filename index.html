@@ -9,8 +9,8 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/getonController.js"></script>
 </head>
-<body>
-    <div ng-controller="getonController">
+<body ng-controller="getonController">
+    <div>
         <h1>Enviar SMS</h1>
         <p>
             <label for="mensaje">Mensaje</label>
@@ -26,8 +26,23 @@
         </p>
         <p>
             <label for="campaña">ID de campaña</label>
-            <input id="campaña" type="text" ng-model="<geton class="campan"></geton>a">
+            <input id="campaña" type="text" ng-model="geton.campana">
         </p>
+        <button ng-click="getonEnvio()">Envio</button>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Destinatario</th>
+                <th>Mensaje</th>
+            </tr>
+            <tr ng-repeat="envio in envios">
+                <td>envio.fecha</td>
+                <td>envio.destinatario</td>
+                <td>envio.mensaje</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
